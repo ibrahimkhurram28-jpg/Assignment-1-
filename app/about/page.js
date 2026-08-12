@@ -28,9 +28,17 @@ export default function AboutPage() {
       </section>
 
       <section className="mb-8">
-        <h2 className="font-semibold text-lg mb-2">Walkthrough video</h2>
-        <div className="card flex items-center justify-center text-sm p-10" style={{ color: "var(--color-ink-soft)" }}>
-          Video walkthrough goes here. Embed or link your recording explaining how to use the site.
+        <h2 className="font-semibold text-lg mb-3">Walkthrough video</h2>
+        <div className="card overflow-hidden p-2">
+          <video
+            className="w-full rounded-lg"
+            controls
+            preload="metadata"
+            playsInline
+          >
+            <source src="/walkthrough.mp4" type="video/mp4" />
+            Your browser does not support the video element.
+          </video>
         </div>
       </section>
     </div>
